@@ -1,0 +1,24 @@
+body {
+    margin:1px;
+   font-family: 'Roboto';
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+.second {
+    padding-top: 60px;
+}
+
+#single_result .multiple_result {
+    font-size: 130%;
+}
+
+.lst{
+    text-align: left;
+    padding-left: 90px;
+}
