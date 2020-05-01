@@ -2,7 +2,7 @@
 <div style="padding-left:10px; padding-right:15px;">A LSTM model for sentiment analysis and API provided for those who wants to use LSTM sentiment analysis for their applications.</div>
 <hr>
  
-#### Overview:
+### Overview:
 <div style="padding-left:10px; padding-right:15px;"> This is an LSTM model that allows users to do basic sentiment analysis. 
 
 - Provides the users the ability to prepare data for the ML model
@@ -10,7 +10,7 @@
 - Allows users to train model, plot graphs and saves checkpoint for early stopping.</div>
 
 
-#### Sentiment Analysis API:
+### Sentiment Analysis API:
 <div style="padding-left:10px; padding-right:15px;"> The LSTM model is trained on dataset provided by <a href="http://help.sentiment140.com/for-students">sentiment140</a>. You can access the REST API created using the LSTM model in this repo. The location for REST API server is:
 
 `www.sentiment-analysis-api.site`
@@ -18,7 +18,7 @@
 The REST API sends 3 responses to a request made:
 
 - 0 : If the sentiment of a sentence is _negative_
-- 1 : if sentiment of a sentence is _positive_
+- 1 : If sentiment of a sentence is _positive_
 
 You can access the API as follows:
 
@@ -64,7 +64,7 @@ where `avg` is average score of the sentences.
 </div>
 
 
-#### Model Training:
+### Model Training:
 
 
 
