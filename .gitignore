@@ -1,0 +1,3 @@
+data/
+src/.vector_cache/
+src/__pycache__/

@@ -8,7 +8,6 @@ import torch
 import torch.nn.functional as F
 import torchtext
 import random
-from global_var import *
 
 glove = torchtext.vocab.GloVe(name="6B", dim=50) # Getting all the glove embedding
 
@@ -20,7 +19,7 @@ def get_data():
     @return: The data from the csv file. 
     '''
 
-    return csv.reader(open("../data/training.1600000.processed.noemoticon.csv", "rt", encoding="latin-1"))
+    return csv.reader(open('../data/training.1600000.processed.noemoticon.csv', "rt", encoding="latin-1"))
 
 
 
@@ -49,7 +48,7 @@ def get_words(glove_vector):
 
     train, valid, test = [], [], []
     for i, line in enumerate(get_data()):
-        if i % 1 == 0:
+        if i % 29 == 0:
             tweet = line[-1]
             idxs = [glove_vector.stoi[w]       
                     for w in text_splits(tweet)
