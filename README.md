@@ -1,5 +1,5 @@
 # Sentiment Analysis using LSTM model
-<div style="padding-left:10px; padding-right:15px;">A LSTM model for sentiment analysis and API provided for those who wants to use LSTM sentiment analysis for their applications.</div>
+<div style="padding-left:10px; padding-right:15px;">An LSTM model for sentiment analysis and API provided for those who want to use LSTM sentiment analysis for their applications.</div>
 <hr>
 
 ### Table of Contents
@@ -10,31 +10,31 @@
 
  
 ### Overview:
-<div style="padding-left:10px; padding-right:15px;"> This is an LSTM model that allows users to do basic sentiment analysis. 
+<div style="padding-left:10px; padding-right:15px;"> This is an LSTM model that allows users to do fundamental sentiment analysis. 
 
 - Provides the users the ability to prepare data for the ML model
-- Provides users the ability to create complex mini-batches of large data.
+- It provides users the ability to create complex mini-batches of large data.
 - Allows users to train model, plot graphs and saves checkpoint for early stopping.</div>
 
 ### Model Training:
 <div style="padding-left:10px; padding-right:15px;">
-The LSTM model is trained on dataset provided by <a href="http://help.sentiment140.com/for-students">sentiment140</a>. The dataset was divided as follows:
+The LSTM model is trained on the dataset provided by <a href="http://help.sentiment140.com/for-students">sentiment140</a>. The dataset was divided as follows:
 
 - Training set : 954177 tweets (~60%)
 - Validation set : 317964 tweets (~20%)
 - Testing set : 318072 tweets (~20%)
 
-The data provided was mostly whether a certain tweet is gives a positive sentiment or a negative sentiment. The model was trained on 300 epochs with batches of 128 and learning rate of 2e-5. The training is shown in the graph below:
+The data provided where tweets that are considered to have positive sentiment or a negative sentiment. The model was trained on 300 epochs with batches of 128 and a learning rate of 2e-5. The training is shown in the graph below:
 
 ![](readme/Figure_training.png)
 
-As we can see there is a slight overfit after epoch ~50. The maximum training accuracy the model reached is ~80%. Even with 80% accuracy, the model is showing promising results with sentiment analysis.
+As we can observe, there is a slight overfit after epoch ~50. The maximum training accuracy the model reached is ~80%. Even with 80% accuracy, the model is showing promising results with sentiment analysis.
 
 </div>
 
 ### File Descriptions:
 <div style="padding-left:10px; padding-right:15px;">
-The whole project is divided into 4 different files for ease of readability and modifications. 
+The whole project is divided into 5 different files for ease of readability and modifications. 
 
 - `model.py`: The main file that contains the LSTM model.
 - `prepare.py`: This files reads the data from the file specified, divides the files into datasets and prepare them to be used by the model.
@@ -50,7 +50,7 @@ The whole project is divided into 4 different files for ease of readability and 
 
 `www.sentiment-analysis-api.site`
 
-The REST API sends 3 responses to a request made:
+The REST API sends 2 responses to a request made:
 
 - 0 : If the sentiment of a sentence is _negative_
 - 1 : If sentiment of a sentence is _positive_
