@@ -75,5 +75,5 @@ def get_words(glove_vector):
     return train, valid, test
 
 
-train, valid, test = get_words(glove) # 954177 317964 318072
+train, valid, test = get_words(glove) 
 print(len(train), len(valid), len(test))

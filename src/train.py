@@ -81,8 +81,8 @@ def get_accuracy(model, data_loader):
     return correct / total
 
 
-model = SentimentAnalysis(50, 50, 3)
-train_loader = BatchGenerator(train, batch_size=64, drop_last=True) # 64 before
-valid_loader = BatchGenerator(valid, batch_size=64, drop_last=False)
-test_loader = BatchGenerator(test, batch_size=64, drop_last=False)
-train_rnn_network(model, train_loader, valid_loader, num_epochs=3, learning_rate=2e-5, checkpoint_path='./RNN_50_50_64_{}')
+model = SentimentAnalysis(50, 50, 2)
+train_loader = BatchGenerator(train, batch_size=128, drop_last=True) # 64 before
+valid_loader = BatchGenerator(valid, batch_size=128, drop_last=False)
+test_loader = BatchGenerator(test, batch_size=128, drop_last=False)
+train_rnn_network(model, train_loader, valid_loader, num_epochs=301, learning_rate=2e-5, checkpoint_path='./RNN_{}')
